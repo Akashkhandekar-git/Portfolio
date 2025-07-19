@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+}
+.navbar img{
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar li {
+    font-size: 16px;
+    list-style-type: none;
+    margin: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navbar li:hover{
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.nav_connect{
+    padding: 15px 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav_connect:hover{
+    transform: scale(1.05);
+}
