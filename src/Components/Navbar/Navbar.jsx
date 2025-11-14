@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Navbar.css";
 import logo from "../../assets/Akash_logo.png";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 const Navbar = () => {
   return (
@@ -9,14 +11,14 @@ const Navbar = () => {
            <img className="logo" src={logo} alt="" />
 
            <ul>
-             <li>Home</li>
-             <li>About Me</li>
-             <li>Services</li>
-             <li>Portfolio</li>
-             <li>Contact</li>
+             <AnchorLink className='Anchor_Link' href="#home"><li className='Anchor_Link'>Home</li></AnchorLink>
+             <AnchorLink className='Anchor_Link' href="#about"><li>About Me</li></AnchorLink>
+             <AnchorLink className='Anchor_Link' href="#services"><li>Services</li></AnchorLink>
+             <AnchorLink className='Anchor_Link' href="#mywork"><li>My Work</li></AnchorLink>
+             <AnchorLink className='Anchor_Link' href="#contact"><li>Contact</li></AnchorLink>
            </ul>
 
-           <div className='nav_connect'>Connect with me</div>
+           <AnchorLink className='Anchor_Link' href="#contact" ><button className='nav_connect'>Connect with me</button> </AnchorLink> 
 
        </div>
      </>

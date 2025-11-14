@@ -12,12 +12,14 @@
     width: 70%;
     font-size: 70px;
     font-weight: 600;
+    color: white;
 }
 .hero h1 span{
     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 .hero p{
@@ -25,6 +27,7 @@
     text-align: center;
     font-size: 24px;
     line-height: 40px;
+    color: white;
 }
 .hero_action{
     display: flex;
@@ -35,24 +38,36 @@
     margin-bottom: 50px;
 }
 .hero_connect{
-    background: linear-gradient(267deg , #df8908 -5.09%, #b415ff 100%);
     padding: 15px 30px;
     border-radius: 50px;
     cursor: pointer;
     transition: .2s;
+    border: 2px solid #b415ff;
+    color: white;
+
+
 }
 .hero_connect:hover{
-    border: 3px solid white;
     transform: scale(1.02);
+    color: white;
+    background: linear-gradient(267deg , #df8908 -5.09%, #b415ff 100%);
+
 }
 .hero_resume{
     padding: 15px 55px;
     border-radius: 50px;
     cursor: pointer;
-    border: 3px solid white;
+    border: 2px solid #b415ff;
     transition: .2s;
+    color: white;
 }
 .hero_resume:hover{
     border-color: #b415ff;
     transform: scale(1.02);
+    background: linear-gradient(267deg , #df8908 -5.09%, #b415ff 100%);
+    color:white
+}
+.Anchor_Link{
+    text-decoration: none;
+    color:white;
 }

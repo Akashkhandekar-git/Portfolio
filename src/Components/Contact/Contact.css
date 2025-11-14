@@ -1,0 +1,90 @@
+
+.Contact_Title h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+}
+.Contact_Left_Detail{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: -50px;
+
+}
+
+.Contact_Left_Detail p{
+    font-size:medium;
+    font-weight: bold;
+    margin: 10px 1px;
+    color: white;
+}
+.Contact_Left_Detail img{
+    width: 30px;
+}
+
+.Contact_left h1{
+    margin: 20px 0px;
+    font-size: 50px;
+    background: linear-gradient(270deg , #DF8908 80%, #b415ff 100%);
+    font-weight: 700;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+
+}
+.Contact_left p{
+color: white;
+}
+.Your_name{
+    margin: 5px 0px;
+}
+.Contact_Input{
+    background : black;
+    width: 100%;
+    height: 200%;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.Contact_Input::placeholder{
+    color: grey;
+    font-size: 13px;
+}
+.Contact_Message{
+    width: 100%;
+    height: 125px;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    background : black;
+    color: white;
+    font-size: 14px;
+
+}
+.Contact_Message::placeholder{
+    color: grey;
+    font-size: 13px;
+}
+.submit{
+    padding: 15px 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover{
+    transform: scale(1.02);
+    color: white;
+}
+
+.contact_form_titles div label{
+    font-size: 14px;
+    color: white;
+}

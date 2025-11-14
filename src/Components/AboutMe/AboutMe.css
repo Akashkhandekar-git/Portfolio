@@ -1,6 +1,93 @@
 .title{
     text-align: center;
     margin: 50px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.title h1{
+    color: white;
+}
+.title img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.react{
+    width: 80px;
+    height: 80px;
+    color:#1082a7;
+    margin: 0px 20px 10px 0px;
+}
+.java{
+    width: 80px;
+    height: 80px;
+    color:#fc9942;
+        margin: 0px 20px 10px 0px;
+
+
+}
+.redux{
+    width: 80px;
+    height: 80px;
+    color:#7a50be;
+        margin: 0px 20px 10px 0px;
+
+
+}
+.python{
+    width: 80px;
+    height: 80px;
+    color:#3d74a1;
+    margin: 0px 0px 0px 0px;
+
+}
+.angular{
+    width: 80px;
+    height: 80px;
+    color:#dd0031;
+        margin: 0px 20px 10px 0px;
+
+}
+.typescript{
+   width: 80px;
+    height: 80px;
+    color:#097ece; 
+        margin: 0px 20px 10px 0px;
+
+}
+.node{
+    width: 80px;
+    height: 80px;
+    color:#84bf08;
+        margin: 0px 20px 10px 0px;
+
+}
+.mongo{
+    width: 80px;
+    height: 80px;
+    color:#08ee69;
+        margin: 0px 20px 10px 0px;
+
+}
+.express{
+    width: 80px;
+    height: 80px;
+    color: white;
+        margin: 0px 20px 10px 0px;
+
+}
+.javascript{
+    width: 80px;
+    height: 80px;
+    color:#f7e024;
+    margin: 0px 20px 10px 0px;
+
 }
 
 .container{
@@ -18,8 +105,12 @@
 .content{
     margin-top: 0px;
     font-size: 18px;
+    color: white; 
     /* background-color: red; */
 
+}
+.icons{
+    justify-content: space-between;
 }
 .content p{
     margin-bottom: 20px;
@@ -35,9 +126,7 @@
     margin: 30px 0px 0px 0px;
     transition: 0.5s;
 }
-.skills:hover{
-    transform: scale(1.05);
-}
+
 .skills p{
     font-size: 20px;
     font-weight: 700;
@@ -61,17 +150,17 @@
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
+    color: white;
+}
 
-
+.techSkill{
+    color: white;
 }
 .image{
     border-radius: 50px;
     background-color: red;
 }
-.details_skills:hover{
-    transform: scale(1.2);
 
-}
 .highlights{
     background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
     background-clip: text;

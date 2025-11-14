@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     margin: 80px 170px;
 }
 .mywork_title{
     position: relative;
+    color: white;
 
 }
 .mywork_title h1{
