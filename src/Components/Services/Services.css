@@ -1,46 +1,132 @@
-.title{
+/* Section Wrapper */
+.services_section {
+    margin: 80px 120px;
+}
+
+/* Title */
+.title {
     text-align: center;
     color: white;
+    font-size: 60px;
+    margin-bottom: 50px;
 }
 
-.myCards{
-    display: flex;
-    justify-content: space-around;
+/* Cards Grid Layout */
+.Card_Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
 }
 
-.cards{
+/* Card Style */
+.cards {
     border: 1px solid purple;
-    width: 500px;
-    margin: 15px;
-    padding: 20px;
     border-radius: 20px;
-    transition: 0.5s;
+    padding: 25px;
     color: white;
-
-
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    transition: 0.35s ease;
+    cursor: pointer;
 }
-.cards:hover{
-    transform: scale(1.1);
-    border: 3px solid #b415ff;
+
+/* Hover Effect */
+.cards:hover {
+    transform: translateY(-8px);
+    border-color: #b415ff;
     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     color: white;
-    cursor: pointer;
+
+    .card_name {
+        background:black;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
     
-    
+
+
 }
-.card_title{
-    font-size: 30px;
+
+/* Card Title Number */
+.card_title {
+    font-size: 28px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
-.card_name{
-    font-size: 30px;
+
+/* Service Name */
+.card_name {
+    font-size: 26px;
     font-weight: bold;
     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
-.card_name:hover{
-    color: white;
+.card_desc {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .services_section {
+        margin: 60px 60px;
+    }
+
+    .Card_Container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+}
+
+/* Mobile (768px) */
+@media (max-width: 768px) {
+    .services_section {
+        margin: 40px 30px;
+    }
+
+    .title {
+        font-size: 42px;
+    }
+
+    .Card_Container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+}
+
+/* Small Phones (480px) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .card_title {
+        font-size: 24px;
+    }
+
+    .card_name {
+        font-size: 22px;
+    }
+
+    .card_desc {
+        font-size: 14px;
+    }
 }

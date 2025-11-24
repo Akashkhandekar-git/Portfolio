@@ -1,7 +1,7 @@
 .title{
     text-align: center;
     margin: 50px;
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
 }
 .title h1{
@@ -12,6 +12,19 @@
     right: 0px;
     bottom: 0px;
     z-index: -1;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.container img{
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    margin:10px 50px  ;
 }
 
 .skills{
@@ -90,18 +103,7 @@
 
 }
 
-.container{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-}
 
-.container img{
-    height: 400px;
-    width: 300px;
-    border-radius: 25px;
-    margin:10px 50px  ;
-}
 .content{
     margin-top: 0px;
     font-size: 18px;
@@ -109,8 +111,11 @@
     /* background-color: red; */
 
 }
-.icons{
+.Skills{
+    width: 80%;
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .content p{
     margin-bottom: 20px;
@@ -174,4 +179,35 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
+}
+.skill_sets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill_sets p{
+    font-size: 12px;
+    color: white;
+    margin-left: -12px
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .content{
+        font-size: 15px;
+    }
+    .skills p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.techSkill{
+    margin-bottom: 30px;
+
+}
+
+
 }

@@ -1,90 +1,168 @@
-
-.Contact_Title h1{
-    text-align: center;
-    font-size: 70px;
-    font-weight: 700;
-    color: white;
-}
-.Contact_Left_Detail{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    margin-left: -50px;
-
+/* Section Wrapper */
+.contact_section {
+  margin: 100px 120px;
+  color: white;
 }
 
-.Contact_Left_Detail p{
-    font-size:medium;
-    font-weight: bold;
-    margin: 10px 1px;
-    color: white;
-}
-.Contact_Left_Detail img{
-    width: 30px;
+/* Title */
+.Contact_Title {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 60px;
 }
 
-.Contact_left h1{
-    margin: 20px 0px;
-    font-size: 50px;
-    background: linear-gradient(270deg , #DF8908 80%, #b415ff 100%);
-    font-weight: 700;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white;
+/* Layout */
+.contact_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
 
+/* Left Side */
+.Contact_left {
+  flex: 1;
 }
-.Contact_left p{
-color: white;
+
+.Contact_left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #DF8908, #b415ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
 }
-.Your_name{
-    margin: 5px 0px;
+
+.Contact_left p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
-.Contact_Input{
-    background : black;
-    width: 100%;
-    height: 200%;
-    padding: 4px;
-    border: none;
-    border-radius: 5px;
-    color: white;
+
+/* Contact Details */
+.Contact_Left_Detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
-.Contact_Input::placeholder{
-    color: grey;
+
+.Contact_Left_Detail img {
+  width: 28px;
+}
+
+.Contact_Left_Detail p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Right Side (Form) */
+.Contact_right {
+  flex: 1;
+}
+
+.contact_form_group {
+  margin-bottom: 25px;
+}
+
+.contact_form_group label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.Contact_Input,
+.Contact_Message {
+  width: 100%;
+  background: black;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.Contact_Message {
+  height: 140px;
+  resize: none;
+}
+
+/* Submit Button */
+.submit {
+  padding: 14px 35px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(267deg, #DA7c25, #B923E1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN 
+=============================== */
+
+/* Tablets (1024px) */
+@media (max-width: 1024px) {
+  .contact_section {
+    margin: 80px 60px;
+  }
+
+  .Contact_Title {
+    font-size: 55px;
+  }
+
+  .contact_wrapper {
+    gap: 40px;
+  }
+}
+
+/* Mobile (768px) */
+@media (max-width: 768px) {
+  .contact_section {
+    margin: 60px 30px;
+  }
+
+  .Contact_Title {
+    font-size: 45px;
+  }
+
+  .contact_wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Contact_left h1 {
+    font-size: 36px;
+  }
+
+  .Contact_left p {
+    font-size: 15px;
+  }
+  .submit
+}
+
+/* Small Phones (480px) */
+@media (max-width: 480px) {
+  .Contact_Title {
+    font-size: 35px;
+  }
+
+  .Contact_left h1 {
+    font-size: 30px;
+  }
+
+  .Contact_Left_Detail p {
     font-size: 13px;
-}
-.Contact_Message{
-    width: 100%;
-    height: 125px;
-    padding: 4px;
-    border: none;
-    border-radius: 5px;
-    background : black;
-    color: white;
-    font-size: 14px;
+  }
 
-}
-.Contact_Message::placeholder{
-    color: grey;
+  .Contact_Input,
+  .Contact_Message {
     font-size: 13px;
-}
-.submit{
-    padding: 15px 30px;
-    margin-right: 10px;
-    border-radius: 50px;
-    border: none;
-    background: linear-gradient(267deg, #DA7c25 0.36%, #B923E1 102.06%);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.submit:hover{
-    transform: scale(1.02);
-    color: white;
-}
-
-.contact_form_titles div label{
-    font-size: 14px;
-    color: white;
+    padding: 12px;
+  }
 }

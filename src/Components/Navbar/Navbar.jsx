@@ -1,28 +1,44 @@
-import React from 'react'
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/Akash_logo.png";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import menu_open from "../../assets/menu_open.svg";
+import menu_close from "../../assets/menu_close.svg";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <>
-       <div className='navbar'>
-           <img className="logo" src={logo} alt="" />
+    <div className="navbar">
 
-           <ul>
-             <AnchorLink className='Anchor_Link' href="#home"><li className='Anchor_Link'>Home</li></AnchorLink>
-             <AnchorLink className='Anchor_Link' href="#about"><li>About Me</li></AnchorLink>
-             <AnchorLink className='Anchor_Link' href="#services"><li>Services</li></AnchorLink>
-             <AnchorLink className='Anchor_Link' href="#mywork"><li>My Work</li></AnchorLink>
-             <AnchorLink className='Anchor_Link' href="#contact"><li>Contact</li></AnchorLink>
-           </ul>
+      {/* Logo */}
+      <img className="logo" src={logo} alt="Logo" />
 
-           <AnchorLink className='Anchor_Link' href="#contact" ><button className='nav_connect'>Connect with me</button> </AnchorLink> 
+      {/* Desktop Menu */}
+      <ul className={`nav_menu ${menuOpen ? "nav_active" : ""}`}>
+        <AnchorLink href="#home" onClick={closeMenu}><li className="{Menu_Link">Home</li></AnchorLink>
+        <AnchorLink href="#about" onClick={closeMenu}><li className="{Menu_Link">About Me</li></AnchorLink>
+        <AnchorLink href="#services" onClick={closeMenu}><li className="{Menu_Link">Services</li></AnchorLink>
+        <AnchorLink href="#mywork" onClick={closeMenu}><li className="{Menu_Link">My Work</li></AnchorLink>
+        <AnchorLink href="#contact" onClick={closeMenu}><li className="{Menu_Link">Contact</li></AnchorLink>
+      </ul>
 
-       </div>
-     </>
-  )
-}
+      {/* Hamburger / Close Icons */}
+      <img
+        src={menuOpen ? menu_close : menu_open}
+        alt="menu"
+        className="nav_mobile_icon"
+        onClick={toggleMenu}
+      />
 
-export default Navbar
+      <AnchorLink href="#contact">
+        <button className="nav_connect">Connect with me</button>
+      </AnchorLink>
+    </div>
+  );
+};
+
+export default Navbar;

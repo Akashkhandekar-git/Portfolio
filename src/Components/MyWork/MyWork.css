@@ -1,30 +1,99 @@
-.mywork{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin: 80px 170px;
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 80px 120px;
 }
-.mywork_title{
-    position: relative;
-    color: white;
 
+/* Title */
+.mywork_title {
+  position: relative;
+  color: white;
 }
-.mywork_title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
+
+.mywork_title h1 {
+  padding: 0 30px;
+  font-size: 70px;
+  font-weight: 600;
 }
-.mywork_title img{
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    z-index: -1;
+
+.mywork_title img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
-.mywork_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+/* Work Grid */
+.mywork_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;               /* smaller gap */
+  width: 100%;
+  justify-items: center;   /* center each box */
+}
+
+.mywork_container img {
+  width: 100%;              /* smaller box instead of 100% */
+  max-width: 560px;        /* prevents oversized cards */
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+
+.mywork_container img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+/* MOBILE + TABLETS */
+@media (max-width: 1024px) {
+  .mywork {
+    margin: 60px 60px;
+  }
+
+  .mywork_title h1 {
+    font-size: 55px;
+  }
+
+  .mywork_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* MAIN MOBILE BREAKPOINT (768px) */
+@media (max-width: 768px) {
+  .mywork {
+    margin: 50px 30px;
     gap: 40px;
+  }
 
+  .mywork_title h1 {
+    font-size: 40px;
+  }
+
+  .mywork_title img {
+    width: 140px;
+    opacity: 0.5;
+  }
+
+  .mywork_container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Small Phones (480px) */
+@media (max-width: 480px) {
+  .mywork_title h1 {
+    font-size: 32px;
+  }
+
+  .mywork_container {
+    gap: 20px;
+  }
 }
