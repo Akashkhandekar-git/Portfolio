@@ -114,9 +114,15 @@
   .nav_mobile_icon {
     display: block;
     position: fixed;
-    right: 60px;
-    top: 40px;
+    right: 40px;
+    top: 30px;
   }
+
+  .logo {
+  height: 50px;
+  width: 90px;
+
+}
 
 
 }
