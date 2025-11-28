@@ -1,6 +1,7 @@
 import React from 'react'
 import "./AboutMe.css";
-import profilePic from "../../assets/about_profile.svg";
+import profilePic from "../../assets/Akash.png";
+
 import theme_pattern from "../../assets/theme_pattern.svg";
 import { FaReact, FaCss3Alt, FaHtml5, FaNodeJs, FaJava, FaAws, FaAngular, FaGitAlt, FaPython } from "react-icons/fa";
 import {
@@ -19,7 +20,7 @@ const AboutMe = () => {
       </div>
       <div className="container">
         <div>
-          <img src={profilePic} alt="profilePic" />
+          <img  src={profilePic} alt="profilePic" />
         </div>
         <div>
           <div className="content">
@@ -39,10 +40,8 @@ const AboutMe = () => {
               <div className='skill_sets'> <SiExpress className='express' /> <p>Express</p></div>
               <div className='skill_sets'> <FaAngular className='angular' /><p>Angular</p></div>
               <div className='skill_sets'>  <SiJavascript className='javascript' /><p>Javascript</p></div>
-              <div className='skill_sets'>  <SiTypescript className="typescript" /><p>Typescript</p></div>
-              {/* <div className='skill_sets'>   <FaJava className='java my-2 mx-3' /><p>Java</p></div> */}
-              {/* <div className='skill_sets'>   <FaPython className='python my-2  mx-3' /><p>Python</p></div> */}
               <div className='skill_sets'>  <SiRedux className='redux my-2 mx-3' /><p>Redux</p></div>
+              <div className='skill_sets'>  <SiTypescript className="typescript" /><p>Typescript</p></div>
 
 
 

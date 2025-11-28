@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Hero.css";
-import logo from "../../assets/profile_img.svg"
+import logo from "../../assets/Akash.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
