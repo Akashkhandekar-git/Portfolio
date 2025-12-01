@@ -15,7 +15,8 @@
 .nav_menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  margin-left: 100px;
+  gap: 100px;
   transition: transform 0.4s ease;
 }
 
@@ -100,6 +101,12 @@
     z-index: 998;
     color: white;
   }
+  .nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.4s ease;
+}
 
   /* When opened */
   .nav_active {
